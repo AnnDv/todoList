@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  ::selection{
+    color: #ffff;
+    background: #8e49e8;
+  }
+  body{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background: linear-gradient(to right, #9e768f, #9fa4c4);
+  }
+  .wrapper{
+    background: #fff;
+    width: 33%;
+    margin: 150px auto;
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Rubik Moonrocks', cursive;
+    text-shadow: 0 1px 0 #000;
+    color: #2e133a;
+  }
+  .wrapper #todo-form{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+  }
+  
+  #todo-form input{
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+  }
+  #todo-form input:focus{
+    border-color: #9b78c9;
+  }
+  #todo-form button{
+    width: 50px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    outline: none;
+    background: #9b78c9;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    /* pointer-events: none; */
+    transition: all 0.3s ease;
+  }
+  #todo-form button:hover{
+    background: #7233c6;
+  }
+  
+  .wrapper .todoList{
+    max-height: 250\px;
+    overflow-y: auto;
+  }
+  .todoList .todo-item{
+    display: flex;
+    position: relative;
+    list-style: none;
+    margin-bottom: 15px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 13px 15px;
+    cursor: default;
+    overflow: hidden;
+    align-items: center;
+    
+  }
+  
+  .todo-item.completed * {
+    color: #ada8a8;
+  }
+  
+  .todo-item.completed .title {
+    text-decoration: line-through;
+  }
+  
+  .todo-item .checkbox {
+    margin-right: .5rem;
+  }
+  
+  .todoList .todo-item button {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #d35d50;
+    height: 33px;
+    margin: 0;
+    min-width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(135px, -17px);
+    transition: all 0.2s ease;
+    border-radius: 3px;
+  }
+  
+  .todoList .todo-item button:hover {
+    background: #e74c3c;
+  }
+  
